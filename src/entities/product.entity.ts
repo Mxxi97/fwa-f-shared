@@ -7,7 +7,6 @@ import { ImageEntity } from './image.entity';
 import { ReviewEntity } from './rating.entity';
 import { TinyintToBoolTransformer } from '../util/tinyIntToBoolTransformer';
 import { IsBoolean, IsNumber, IsOptional, IsString } from 'class-validator';
-import { OmitType } from '../util/omit-type';
 import { Transform, Type } from 'class-transformer';
 
 @Entity({ name: 'product' })
@@ -186,7 +185,7 @@ export class ProductRequest {
     @IsNumber()
     @IsOptional()
     stock: number;
-} /* extends OmitType(ProductEntity, ["ratings", "bottle", "category", "description", "images", "items", "producer", "toResponse"]) { } */
+}
 
 export class ProductCreateOrUpdateRequest {
     @IsString()
@@ -222,7 +221,4 @@ export class ProductCreateOrUpdateRequest {
     @IsNumber()
     @IsOptional()
     stock: number;
-} /* extends OmitType(ProductRequest, [
-	'productId',
-	'countSold',
-]) {} */
+}

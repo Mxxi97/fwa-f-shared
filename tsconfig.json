@@ -1,12 +1,13 @@
 {
     "compilerOptions": {
-        "module": "ES2015",
-        "target": "es2015",
-        "moduleResolution": "nodenext",
+        "target": "es2017",
+        "module": "commonjs",
+        "moduleResolution": "Node",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "declaration": true,
         "outDir": "./dist"
     },
-    "include": ["src/**/*"]
+    "include": ["src/**/*"],
+    "resolveJsonModule": true
 }

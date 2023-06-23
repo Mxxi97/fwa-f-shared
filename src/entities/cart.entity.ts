@@ -1,7 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
 import { ItemEntity } from './item.entity';
 import { IsNumber, IsOptional } from 'class-validator';
-import { OmitType } from '../util/omit-type';
 
 @Entity({ name: 'cart' })
 export class CartEntity {
