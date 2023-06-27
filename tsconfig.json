@@ -6,7 +6,8 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "declaration": true,
-        "outDir": "./dist"
+        "outDir": "./dist",
+        "isolatedModules": true
     },
     "include": ["src/**/*"],
     "resolveJsonModule": true
