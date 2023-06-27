@@ -23,3 +23,11 @@ export { ReviewEntity, ReviewResponse, ReviewCreateUpdateRequest } from './entit
 export { RoleEntity } from './entities/role.entity';
 
 export { UserEntity, UserResponse, UserCreateOrUpdateRequest } from './entities/user.entity';
+
+export { createOrUpdate } from './util/createorupdate';
+export { findByPartialT, findOneByPartialT } from './util/findbypartial';
+export { getEnvVars } from './util/get-env';
+export { OmitType } from './util/omit-type';
+export { TinyintToBoolTransformer } from './util/tinyIntToBoolTransformer';
+export { toJSON } from './util/tojson';
+export { Type } from './util/type';

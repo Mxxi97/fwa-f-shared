@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToMany, JoinColumn } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToMany, JoinColumn, Timestamp } from 'typeorm';
 import { ItemEntity } from './item.entity';
 import { AddressEntity } from './address.entity';
 import { UserEntity } from './user.entity';
@@ -51,7 +51,7 @@ export class OrderEntity {
     @IsOptional()
     billingAddressId: number;
 
-    @Column({ name: 'orderDate', type: 'date' })
+    @Column({ name: 'orderDate', type: 'timestamp' })
     @IsNumber()
     @IsOptional()
     orderDate: Date;
